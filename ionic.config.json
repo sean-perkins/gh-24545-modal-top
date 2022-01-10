@@ -1,0 +1,7 @@
+{
+  "name": "gh-24545-modal-top",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
