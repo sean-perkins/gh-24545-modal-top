@@ -1,0 +1,14 @@
+<ion-content>
+  <ion-button fill="clear" id="open-start-date-input">
+    <ion-icon icon="calendar"></ion-icon>
+    <ion-input>{{ startAt | date }}</ion-input>
+  </ion-button>
+  <ion-modal class="datetime" trigger="open-start-date-input" show-backdrop="false">
+    <ng-template>
+      <ion-datetime presentation="date" [showDefaultButtons]="true">
+      </ion-datetime>
+    </ng-template>
+  </ion-modal>
+
+  <ion-button color="danger" (click)="dismiss()">Dismiss on top</ion-button>
+</ion-content>
